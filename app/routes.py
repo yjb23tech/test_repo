@@ -1,7 +1,8 @@
 from app import app 
 
-@app.routes('/')
-@app.routes('/index')
+#The basic routing below tells my server how to respond to client side requests into the server
+@app.route('/')
+@app.route('/index')
 def index():
-    return "Momma I made it!"
+    return "Paradise Lost!"
 
